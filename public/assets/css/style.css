@@ -3,6 +3,7 @@
 }
 .navbar{
     background: #ea062b;
+    z-index: 999;
 }
 
 .navbar-toggler {
@@ -85,4 +86,33 @@
 
 .navbar-toggler.collapsed .toggler-icon {
     background: white;
+}
+
+
+
+/* home donor */
+.banner{
+    background: #f3f9f4;
+    width: 100%;
+    height: 12rem;
+}
+.banner img{
+    width: 100%;
+    height: 12rem;
+    /* opacity: .8; */
+}
+.header_item{
+    position: absolute;
+    top: 7rem;
+    left: 24%;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    z-index: 9;
+}
+@media (max-width: 575px) {
+    .header_item{
+        top: 6rem;
+        left: 3%;
+    }
 }

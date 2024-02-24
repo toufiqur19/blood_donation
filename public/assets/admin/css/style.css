@@ -288,3 +288,33 @@
     background: var(--dark);
     border-color: var(--primary);
 }
+
+/* admin donor */
+.donor{
+    background: #f3f6f9;
+    height: 90%;
+}
+.btn{
+    background: #ea062b;
+    color: #F3F6F9;
+    transition: all 0.5s ease;
+}
+
+.btn:hover{
+    color: #F3F6F9;
+}
+.title{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.form_group{
+    display:flex;
+    grid-gap: 15px;
+}
+#gender{
+outline: none;
+box-shadow: none;
+background: #fff;
+border: .5px solid #191C24;
+border-radius: 0;
+}
