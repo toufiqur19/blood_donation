@@ -16,6 +16,8 @@ Route::middleware('auth','admin:admin')->group(function () {
     Route::get('/admin/donor',[AdminController::class,'adminDonor'])->name('donor');
     Route::get('/admin/donor/create',[AdminController::class,'create'])->name('create');
     Route::post('/admin/donor/store',[AdminController::class,'store'])->name('store');
+    Route::get('/donor/edit/{id}',[AdminController::class,'edit']);
+    Route::put('/donor/update/{id}',[AdminController::class,'update']);
 });
 
 

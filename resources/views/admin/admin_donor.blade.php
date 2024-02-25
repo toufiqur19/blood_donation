@@ -25,7 +25,8 @@
                         <th scope="col">Group</th>
                         <th scope="col">Gender</th>
                         <th scope="col">Image</th>
-                        <th scope="col">Action</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -40,7 +41,8 @@
                             <td>
                             <img src="{{asset('donor/img/'.$donor->image)}}" alt="" width="30" height="30">
                             </td>
-                            <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                            <td><a class="btn btn-sm btn-primary" href="{{url('donor/edit/'.$donor->id)}}">Edit</a></td>
+                            <td><a class="btn btn-sm btn-primary" href="">Delete</a></td>
                         </tr>
 
                         @endforeach

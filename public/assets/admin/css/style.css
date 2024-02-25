@@ -318,3 +318,9 @@ background: #fff;
 border: .5px solid #191C24;
 border-radius: 0;
 }
+
+.action_btn{
+    position: absolute;
+    right: 2rem;
+    
+}
