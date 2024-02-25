@@ -133,7 +133,7 @@
                   </div>
                   <div class="mb-3 w-100 ">
                     <label for="" class="form-label">In</label>
-                    <input type="number" name="in" class="form-control h-50" value="{{$editDonors->in}}">
+                    <input type="text" name="in" class="form-control h-50" value="{{$editDonors->in}}">
                     @if($errors->has('in'))
                     <p class="text-danger">{{ $errors->first('in') }}</p>
                     @endif
@@ -143,7 +143,7 @@
             <div class="flex gap-3">
                 <div class="mb-3 w-100 ">
                     <label for="" class="form-label">Fb</label>
-                    <input type="number" name="fb" class="form-control h-50" value="{{$editDonors->fb}}">
+                    <input type="text" name="fb" class="form-control h-50" value="{{$editDonors->fb}}">
                     @if($errors->has('fb'))
                     <p class="text-danger">{{ $errors->first('fb') }}</p>
                     @endif

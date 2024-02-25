@@ -129,4 +129,10 @@ class AdminController extends Controller
         
         return redirect('admin/donor')->with('message','update post successfuly');
     }
+    public function delete($id)
+    {
+        $deteteDonors = DonorModel::find($id);
+        $deteteDonors->delete();
+        return redirect('admin/donor')->with('message','Delete successfuly');
+    }
 }

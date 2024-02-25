@@ -42,7 +42,7 @@
                             <img src="{{asset('donor/img/'.$donor->image)}}" alt="" width="30" height="30">
                             </td>
                             <td><a class="btn btn-sm btn-primary" href="{{url('donor/edit/'.$donor->id)}}">Edit</a></td>
-                            <td><a class="btn btn-sm btn-primary" href="">Delete</a></td>
+                            <td><a class="btn btn-sm btn-primary" href="{{url('donor/delete/'.$donor->id)}}">Delete</a></td>
                         </tr>
 
                         @endforeach
