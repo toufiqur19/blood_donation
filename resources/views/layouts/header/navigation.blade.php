@@ -12,14 +12,14 @@
           <a class="nav-link {{Request::is('/')?'active':''}}" aria-current="page" href="{{route('home')}}">Home</a>
         </li>
         <li class="nav-item  mx-2">
-          <a class="nav-link {{Request::is('donor')?'active':''}}" aria-current="page" href="{{route('home.donor')}}">Donor</a>
+          <a class="nav-link {{Request::is('home/donor')?'active':''}}" aria-current="page" href="{{route('home.donor')}}">Donor</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -39,7 +39,7 @@
       
       @auth
       <!-- Settings Dropdown -->
-      <div class="hidden sm:flex sm:items-center sm:ms-6 text-light">
+      <div class="hidden auth_index sm:flex sm:items-center sm:ms-6 text-light">
          <x-dropdown align="right" width="48">
              <x-slot name="trigger">
                  <button class="inline-flex items-center px-3 py-2 text-[1rem] leading-4 font-medium rounded-md text-black hover:text-[#F9BFD8] focus:outline-none transition ease-in-out duration-150">
@@ -74,7 +74,11 @@
          </x-dropdown>
      </div>
       @endauth
-
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a id="homeDonor" class="nav-link px-3" href="{{route('donor.create')}}">Create Donor</a>
+        </li> 
+      </ul>
     </div>
   </div>
 </nav>

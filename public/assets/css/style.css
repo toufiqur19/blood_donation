@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .login_form{
     width: 30%;
 }
@@ -104,9 +109,9 @@
 .header_item{
     position: absolute;
     top: 7rem;
-    left: 24%;
+    left: 25%;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     z-index: 9;
 }
@@ -116,3 +121,185 @@
         left: 3%;
     }
 }
+.home_banner{
+    background-image: url('../img/1.png');
+    width: 100%;
+    height: 15rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.donor_banner{
+    background-image: url('../img/2.png');
+    width: 100%;
+    height: 15rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner_overlay{
+    width: 100%;
+    height: 15rem;
+    background: rgba(3, 3, 3, 0.8);
+}
+#homeDonor{
+    background: white;
+    color: #ea062b;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.auth_index{
+    z-index: 99;
+}
+.banner{
+    z-index: -9;
+}
+.donor_detile{
+    position: absolute;
+    background: #161939;
+    left: 20%;
+    margin-top: -2rem;
+    padding: 1rem 1rem;
+    color: #fff;
+    width: 60%;
+    border-radius: 5px;
+}
+.donor_detiles{
+    position: relative;
+    left: 30%;
+    margin-top: -2rem;
+    padding: 1rem 1rem;
+    color: black;
+    width: 40%;
+    border-radius: 5px;
+}
+.donor_detiles img{
+    position: relative;
+    left: 30%;
+}
+.d_color{
+    color: #ea062b;
+}
+/* card */
+.card{
+    cursor: pointer;
+}
+.donor_datile img{
+width: 30%;
+height: 20rem;
+}
+.card img{
+    width: 100%;
+    height: 12rem;
+}
+
+.more{
+    background: #ea062b;
+    padding: .4rem 1rem;
+    color: #fff;
+    border-radius: 2px;
+    transition: all 0.5s ease-in-out;
+}
+.more:hover{
+    background: #161939;
+    color: #fff;
+}
+/* card */
+
+/* search */
+.search{
+    background: #fff;
+    border-radius: 5px;
+    padding-left: .5rem;
+}
+.search select{
+    outline: none;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.search_btn{
+    background: #ea062b;
+    padding: 5px 15px;
+}
+
+/* search */
+/* footer */
+.footer{
+    background-image: url("../img/heart-doctor-2203.jpg");
+    width: 100%;
+    height: auto;
+    background-position: center;
+}
+.overlay{
+    width: 100%;
+    height: auto;
+    background: rgba(240, 4, 4, 0.8);
+}
+
+.copy{
+    background: rgba(240, 4, 4, 0.9);
+}
+.sub{
+    color: black;
+    position: relative;
+  }
+  .sub input:focus{
+    outline: none !important;
+    box-shadow: none;
+  }
+.p-btn{
+    position: absolute;
+    background: #ea062b;
+    right: .5rem;
+    top: .5rem;
+    padding: 6px 10px;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+}
+.title::before{
+   content: '';
+   position: absolute;
+   width: 3rem;
+   height: 2px;
+   background: #fff;
+   margin-top: 1.9rem;
+}
+.icons i{
+    background: #fff;
+    padding: 6px 10px;
+    border-radius: 2px;
+    color: #ea062b;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    margin-left: .5rem;
+}
+.icons i:hover{
+    background: #ea062b;
+    color: #fff;
+}
+.q-link i{
+    font-size: 10px;
+    background: #fff;
+    padding: 3px 5px;
+    border-radius: 50%;
+    color: #ea062b;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.q-link a:hover{
+    color: #fff;  
+}
+.logo a:hover{
+    color: #fff;  
+}
+/* footer */
+
+@media only screen and (max-width: 600px) {
+    .donor_detiles{
+        left: 5%;
+        width: 90%;
+    }
+  }
